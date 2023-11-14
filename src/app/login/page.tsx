@@ -3,7 +3,7 @@
 import React from "react";
 import { useState } from "react";
 
-export default function page() {
+export default function Page() {
   const [pasvalue, setPasvalue] = useState<any>();
   const [value, setValue] = useState<any>();
   const [text, setText] = useState<React.JSX.Element>();
