@@ -35,14 +35,14 @@ export default function Footer() {
         </div>
         <div className="flex flex-col gap-3 mt-5">
           <p className="hover:underline ">HELP</p>
-          <p className="mt-5">we are ready to help you</p>
+          <p className="mt-5">We are ready to help you</p>
           <p>24/7</p>
         </div>
         <div className="flex flex-col gap-3 mt-5">
           <p className="hover:underline">ALWAYS</p>
-          <p className="mt-5">you can trust us</p>
-          <p>your data is secure </p>
-          <p>your order will find you</p>
+          <p className="mt-5">You can trust us</p>
+          <p>Your data is secure </p>
+          <p>Your order will find you</p>
         </div>
       </div>
     </footer>

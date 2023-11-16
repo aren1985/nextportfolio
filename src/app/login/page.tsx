@@ -2,6 +2,7 @@
 
 import React from "react";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function Page() {
   const [pasvalue, setPasvalue] = useState<any>();
@@ -59,6 +60,12 @@ export default function Page() {
             >
               login
             </button>
+            <Link
+              href={"/"}
+              className="border-2 border-blue-900 text-center font-bold text-white"
+            >
+              cansel
+            </Link>
           </form>
         </div>
       </div>

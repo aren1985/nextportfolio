@@ -2,6 +2,7 @@
 
 import React from "react";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function Logup<FC>() {
   const [email, setEmail] = useState<string | number>("");
@@ -92,6 +93,13 @@ export default function Logup<FC>() {
           >
             register
           </button>
+
+          <Link
+            href={"/"}
+            className="text-white font-bold text-center border-2 border-blue-900"
+          >
+            cansel
+          </Link>
         </form>
       </div>
     </div>
