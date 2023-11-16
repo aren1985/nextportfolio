@@ -39,24 +39,27 @@ export default function Home() {
   };
 
   return (
-    <main>
+    <main className="flex flex-col justify-center items-center ">
       {warning && (
-        <div className="  rounded left-[43%] p-3 font-bold bg-yellow-500 text-blue-700 fixed mt-[120px] z-50 text-center">
+        <div className="left-[43%] top-[200px]  rounded  p-3 font-bold bg-yellow-500 text-blue-700 fixed z-50 ">
           The gold is chosen already
         </div>
       )}
       <div>
-        <div className="relative -top-[100px] h-[250px] ">
+        <div className="h-[200px] ">
           <Carousel />
         </div>
-        <Baskicon open={open} cart={cart} />
-
+        <div>
+          <Baskicon open={open} cart={cart} />
+        </div>
         {show && <BasketPage close={close} cart={cart} setCart={setCart} />}
 
         <Globmenu />
-        <h3 className="text-blue-600 absolute xujuj pt-10 left-[50px] font-bold ">
+
+        <h3 className="text-blue-600 2xl:text-5xl 2xl:-ml-24 xujuj absolute mt-10 font-bold ">
           Search and choose your jewelry from our elegant jewelry list
         </h3>
+
         <div className="flex gap-10">
           <AllThings add={add} />
           <Globus />

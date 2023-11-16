@@ -2,7 +2,7 @@ import React from "react";
 
 export default function AboutPage() {
   return (
-    <div className="text-yellow-600 font-bold  w-full pl-20">
+    <div className="text-yellow-600 font-bold text-xl 2xl:text-2xl w-full pl-20">
       <div className="mt-32">
         <p className=" text-center text-blue-600">ABOUT SITE AND ABOUT ME</p>
       </div>

@@ -33,11 +33,11 @@ export default function BasketPage({ close, cart, setCart }: Close) {
 
   let GranttotalPrice: number = 0;
   return (
-    <div className="pl-[900px] fixed z-20 text-white flex flex-col top-6">
+    <div className="pl-[900px] 2xl:pl-[1000px] fixed z-20 text-white flex flex-col top-6 2xl:top-8">
       <div className="absolute  text-center  mt-10 overflow-auto text-white h-[100vh] w-[350px]  border-2 border-blue-500 ">
         <button
           onClick={close}
-          className="text-white h-10  border-2 border-blue-900 w-full"
+          className="text-white h-12 text-lg font-bold border-2 border-blue-900 w-full"
         >
           Close
         </button>
@@ -89,7 +89,9 @@ export default function BasketPage({ close, cart, setCart }: Close) {
               placeholder="fill card"
               className="text-white bg-blue-600"
             />
-            <button className="w-full border border-blue-900">Buy</button>
+            <button className="w-full h-12 font-bold text-lg border border-blue-900">
+              Buy
+            </button>
           </form>
         </div>
       </div>

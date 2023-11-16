@@ -228,7 +228,7 @@ export default function List({ add }: Add) {
                   </div>
                   <span className="bg-blue-950">{prod.price}$</span>
                   <button
-                    className="border-2 border-blue-600  w-[70%]"
+                    className="border-2 border-blue-600  w-[70%] opacity-50 hover:opacity-100"
                     onClick={() => add(prod)}
                   >
                     ADD

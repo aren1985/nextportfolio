@@ -2,8 +2,8 @@ import React from "react";
 
 export default function Carousel() {
   return (
-    <div className=" h-[100vh] flex justify-center items-center overflow-hidden">
-      <div className="dvoik relative w-[100px] h-[100px]">
+    <div className=" h-[300px] relative top-24 2xl:top-32 flex justify-center items-center overflow-hidden">
+      <div className="dvoik relative w-[100px] h-[100px] 2xl:w-[120px] 2xl:h-[120px]">
         <span className="spo spo1 ">
           <img src="/necklaceimages/necklace2.jpeg" alt="ll" className="nkar" />
         </span>

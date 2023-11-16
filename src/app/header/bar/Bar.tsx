@@ -4,30 +4,37 @@ import Menu from "@/app/menu/Menu";
 
 export default function Bar() {
   return (
-    <div className="shad cursor-pointer z-50  fixed w-screen h-16 lolo text-yellow-600 font-bold  flex items-center justify-between">
+    <div className="shad cursor-pointer z-50  fixed w-screen h-16 2xl:h-20 lolo text-yellow-600 font-bold  flex items-center justify-between">
       <div>
         <Menu />
       </div>
+      <div>
+        <h2 className=" -ml-[350px] 2xl:-ml-[450px]  text-3xl 2xl:text-4xl">
+          JEWELRY WORLD
+        </h2>
+      </div>
       <div className="flex justify-center items-center gap-10 pr-[50px] text-xl">
-        <h2 className="pr-[400px] text-3xl">JEWELRY WORLD</h2>
-        <Link href={"/"} className="hover:text-yellow-300 focus:text-blue-900">
+        <Link
+          href={"/"}
+          className="hover:text-yellow-300 focus:text-blue-900 2xl:text-2xl"
+        >
           Home
         </Link>
         <Link
           href={"/about"}
-          className="hover:text-yellow-300 focus:text-blue-900"
+          className="hover:text-yellow-300 focus:text-blue-900 2xl:text-2xl"
         >
           About
         </Link>
         <Link
           href={"/logup"}
-          className="hover:text-yellow-300 focus:text-blue-900"
+          className="hover:text-yellow-300 2xl:text-2xl focus:text-blue-900"
         >
           Register
         </Link>
         <Link
           href={"/login"}
-          className="hover:text-yellow-300 focus:text-blue-900"
+          className="hover:text-yellow-300 2xl:text-2xl focus:text-blue-900"
         >
           Login
         </Link>
