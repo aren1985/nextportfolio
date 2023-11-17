@@ -64,7 +64,7 @@ export default function Page() {
               href={"/"}
               className="border-2 border-blue-900 text-center font-bold text-white"
             >
-              cansel
+              cancel
             </Link>
           </form>
         </div>

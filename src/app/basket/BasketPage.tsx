@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { useState } from "react";
 
 interface Close {
   close: any;
@@ -9,6 +10,7 @@ interface Close {
 }
 
 export default function BasketPage({ close, cart, setCart }: Close) {
+  const [sac, setSac] = useState<boolean>(false);
   const del = (id: number) => {
     const delo = cart.filter((elem: any) => elem.id !== id);
     setCart(delo);
@@ -29,6 +31,15 @@ export default function BasketPage({ close, cart, setCart }: Close) {
       --upDatedQnty[indo].qnty;
     }
     setCart(upDatedQnty);
+  };
+
+  const buy = () => {
+    setCart([]);
+
+    setSac(true);
+    setTimeout(() => {
+      setSac(false);
+    }, 2000);
   };
 
   let GranttotalPrice: number = 0;
@@ -75,6 +86,9 @@ export default function BasketPage({ close, cart, setCart }: Close) {
             })
           )}
         </div>
+        {sac && (
+          <div className="text-green-500 text-xl pb-5 font-bold">success</div>
+        )}
         granttotalprice|{GranttotalPrice}$
         <div className="mt-5  w-full  h-46">
           <form
@@ -89,7 +103,10 @@ export default function BasketPage({ close, cart, setCart }: Close) {
               placeholder="fill card"
               className="text-white bg-blue-600"
             />
-            <button className="w-full h-12 font-bold text-lg border border-blue-900">
+            <button
+              onClick={buy}
+              className="w-full h-12 font-bold text-lg border border-blue-900"
+            >
               Buy
             </button>
           </form>

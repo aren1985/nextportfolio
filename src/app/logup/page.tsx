@@ -98,7 +98,7 @@ export default function Logup<FC>() {
             href={"/"}
             className="text-white font-bold text-center border-2 border-blue-900"
           >
-            cansel
+            cancel
           </Link>
         </form>
       </div>

@@ -52,6 +52,7 @@ export default function Home() {
         <div>
           <Baskicon open={open} cart={cart} />
         </div>
+
         {show && <BasketPage close={close} cart={cart} setCart={setCart} />}
 
         <Globmenu />

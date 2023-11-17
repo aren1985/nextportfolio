@@ -5,14 +5,13 @@ import Menu from "@/app/menu/Menu";
 export default function Bar() {
   return (
     <div className="shad cursor-pointer z-50  fixed w-screen h-16 2xl:h-20 lolo text-yellow-600 font-bold  flex items-center justify-between">
-      <div>
+      <div className="flex">
         <Menu />
+        <div>
+          <h2 className="pl-20 text-3xl 2xl:text-4xl">JEWELRY WORLD</h2>
+        </div>
       </div>
-      <div>
-        <h2 className=" -ml-[350px] 2xl:-ml-[450px]  text-3xl 2xl:text-4xl">
-          JEWELRY WORLD
-        </h2>
-      </div>
+
       <div className="flex justify-center items-center gap-10 pr-[50px] text-xl">
         <Link
           href={"/"}

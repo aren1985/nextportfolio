@@ -19,7 +19,7 @@ export default function AboutPage() {
         </div>
         <div className=" w-[400px] ">
           <p className="p-10 text-blue-600 text-center">ABOUT ME</p>
-          <p className="text-center">I am frontEnd developer </p>
+          <p className="text-center">I am FrontEnd developer </p>
         </div>
         <div className="w-[400px]">
           <p className="p-10 text-blue-600 text-center">MY SKILLS</p>
