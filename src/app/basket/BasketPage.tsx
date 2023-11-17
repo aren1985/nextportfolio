@@ -44,7 +44,7 @@ export default function BasketPage({ close, cart, setCart }: Close) {
 
   let GranttotalPrice: number = 0;
   return (
-    <div className="pl-[900px] 2xl:pl-[1000px] fixed z-20 text-white flex flex-col top-6 2xl:top-8">
+    <div className="right-[350px]  fixed z-20 text-white flex flex-col top-6 2xl:top-8">
       <div className="absolute  text-center  mt-10 overflow-auto text-white h-[100vh] w-[350px]  border-2 border-blue-500 ">
         <button
           onClick={close}
